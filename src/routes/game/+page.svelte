@@ -1,12 +1,4 @@
-<title>JeopardyWebApp</title>
-
-<style>
-    .heading{
-        text-align: center;
-        font-size: 50px;
-    }
-
-</style>
+<title>Game Page</title>
 
 <script>
     import Taskbar from '/src/components/taskbar.svelte';
@@ -22,13 +14,11 @@
 
 <Taskbar {items}/>
 
-<h1 class="heading"> Jeopardy Main </h1>
-
+<h1 class="heading"> Game Portion </h1>
 
 <body>
 
    
+
 </body>
-
-
 

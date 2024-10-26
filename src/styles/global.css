@@ -1,0 +1,11 @@
+body {
+    background-image:
+    linear-gradient(to bottom, #2007fc98 0%, transparent), 
+    linear-gradient(to top, rgb(145, 111, 219), transparent),
+    radial-gradient(circle at right, rgb(185, 25, 233) 00%, rgba(255, 255, 255, 0.2) 40%),
+    radial-gradient(circle at left, rgb(240, 146, 255) 10%, rgba(255, 255, 255, 0.2) 40%),
+    radial-gradient(circle at center, white 100%, rgba(255, 255, 255, 0.2) 40%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

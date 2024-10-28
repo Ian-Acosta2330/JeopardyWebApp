@@ -1,24 +1,37 @@
 <title>Game Page</title>
 
+<!-- src/routes/board.svelte -->
 <script>
-    import Taskbar from '/src/components/taskbar.svelte';
-    const items = [
-        {name: 'Home', href: '/routes'},
-        {name: 'Game', href: '/game/'},
-        {name: 'Profile', href: '/'},
-        {name: 'Settings', href: '/'},
-        {name: 'Logout', href:'/'}
-    ];
-    
+    import { question, fetchQuestion } from '../../stores/questions.js';
+    import { onMount } from 'svelte';
+
+    let showAnswer = false;
+
+    onMount(async () => {
+        await fetchQuestion();
+    });
+
+    function revealAnswer() {
+        showAnswer = true;
+    }
 </script>
 
-<Taskbar {items}/>
+<style>
+    /* Add some basic styling */
+</style>
 
-<h1 class="heading"> Game Portion </h1>
-
-<body>
-
-   
-
-</body>
-
+<div class="board">
+    {#if $question}
+        <h2>Question:</h2>
+        <p>{$question.chosenQuestion}</p>
+        {#if showAnswer}
+            <h2>Answer:</h2>
+            <p>{$question.chosenAnswer}</p>
+        {:else}
+            <button on:click={revealAnswer}>Reveal Answer</button>
+        {/if}
+    {:else}
+        <p>Loading question...</p>
+    {/if}
+    <button on:click={() => fetchQuestion()}>Next Question</button>
+</div>

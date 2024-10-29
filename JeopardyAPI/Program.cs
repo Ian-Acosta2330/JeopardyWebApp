@@ -37,19 +37,23 @@ app.MapGet("/jeopardy", () =>
     {
         new { 
         Question = "What is the name of the first President of the USA? FirstName LastName",
-        Answer = "george washington"
+        Answer = "george washington",
+        Category = "History"
         },
         new {
         Question = "What is 2 + 5",
-        Answer = "7"
+        Answer = "7",
+        Category = "Mathematics"
         },
         new {
         Question = "What is the capital of Texas",
-        Answer = "austin"
+        Answer = "austin",
+        Category = "Geography"
         },
         new {
         Question = "Who wrote Green Eggs and Ham",
-        Answer = "dr. seuss"
+        Answer = "dr. seuss",
+        Category = "Literature"
         }
     };
 
@@ -58,7 +62,8 @@ app.MapGet("/jeopardy", () =>
     var question = new
     {
         chosenQuestion = questionPool[randQuestionInd].Question,
-        chosenAnswer = questionPool[randQuestionInd].Answer
+        chosenAnswer = questionPool[randQuestionInd].Answer,
+        chosenCategory = questionPool[randQuestionInd].Category
     };
 
     return Results.Ok(question);

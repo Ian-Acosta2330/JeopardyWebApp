@@ -24,6 +24,7 @@
     let result='';
     let questions = '';
     let answer = '';
+    let category = '';
     
     onMount(async () => {
         try {
@@ -34,6 +35,7 @@
             const data = await response.json();
             questions = data.chosenQuestion;
             answer = data.chosenAnswer;     
+            category = data.chosenCategory;
         } catch (error) {
             console.error('Error fetching question:', error);
         }
@@ -62,6 +64,7 @@
 <h1 class="heading"> Jeopardy Main </h1>
 
 <div class="prompts">
+    <h1>Category: {category} </h1>
     <h1>Jeopardy Question: {questions} ? </h1>
 
     <form on:submit|preventDefault={handleSubmit}>

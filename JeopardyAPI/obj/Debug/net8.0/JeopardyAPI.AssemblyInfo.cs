@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JeopardyAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb3531b7995de2f3b33df640d758289c8569426e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a499a25cc4b9bb823c71c6fcdf3df2a5c75b133")]
 [assembly: System.Reflection.AssemblyProductAttribute("JeopardyAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JeopardyAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

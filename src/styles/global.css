@@ -9,3 +9,34 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
+.heading{
+    text-align: center;
+    font-size: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    width: 80%;
+    margin: 0 auto;
+    border: 6px solid black;
+    margin-top: 20px;
+    color: white;
+}
+table {
+    text-align: center;
+}
+
+thead {
+    background-color: darkblue;
+    font-size: 50px;
+}
+tbody {
+    background-color: darkblue;
+    font-size: 2vh;
+}
+th, td {
+    width: 33.33%;
+    height: 90px;
+}

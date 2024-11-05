@@ -3,13 +3,10 @@
 <script>
     import Taskbar from '/src/components/taskbar.svelte';
     const items = [
-        {name: 'Home', href: '/routes'},
-        {name: 'Game', href: '/game/'},
-        {name: 'Profile', href: '/'},
-        {name: 'Settings', href: '/'},
-        {name: 'Logout', href:'/'}
+        {name: 'Home', href: '/'},
+        {name: 'Game', href: '/game/'}
     ];
-    
+
 </script>
 
 <Taskbar {items}/>

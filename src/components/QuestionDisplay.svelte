@@ -26,6 +26,6 @@
     <button on:click={revealHint}>Show Hint</button>
   {/if}
 
-  <input type="text" bind:value={userInput} placeholder="Enter your answer" />
+  <input type="text" bind:value={userInput} placeholder="Your answer" />
   <button on:click={submitAnswer}>Submit Answer</button>
 </div>

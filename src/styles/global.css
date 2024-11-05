@@ -38,5 +38,30 @@ tbody {
 }
 th, td {
     width: 33.33%;
-    height: 90px;
+    height:200px;
+}
+button {
+    display: flex;
+    background-color: transparent;
+    border-color: transparent;  
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+button:hover {
+    text-decoration: underline;
+}
+.question-section button{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.question-section input {
+    border-color: red;
+    height: 20px;
 }

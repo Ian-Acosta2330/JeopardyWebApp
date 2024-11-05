@@ -1,10 +1,7 @@
 <script>
-    export let items = [
-        {name: 'Home', href: '/routes'},
-        {name: 'Game', href: '/game/'},
-        {name: 'Profile', href: '/'},
-        {name: 'Settings', href: '/'},
-        {name: 'Logout', href:'/'}
+    export const items = [
+        {name: 'Home', href: '/'},
+        {name: 'Game', href: '/game/'}
     ];
 </script>
 

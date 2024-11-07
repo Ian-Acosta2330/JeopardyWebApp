@@ -4,6 +4,8 @@
   import Taskbar from '/src/components/taskbar.svelte';
   import QuestionDisplay from '/src/components/QuestionDisplay.svelte';
   import { onMount } from 'svelte';
+  import { players } from '/src/stores/players.js';
+
 
   const items = [];
 
@@ -16,7 +18,10 @@
       history: []
   };
 
-  let selectedQuestion = null; 
+  let selectedQuestion = null;
+  let selectedPlayer = 0; // Track which player's turn it is
+
+  //Select random question based on the catagory and points
   function selectRandomQuestion(category, points) {
       const filteredQuestions = questions[category].filter(q => q.points === points && !q.answered);
       if (filteredQuestions.length > 0) {
@@ -42,15 +47,17 @@
   });
 
   function handleSubmit() {
-      if (userInput.trim().toLowerCase() === selectedQuestion.answer.toLowerCase()) { 
-          alert("Correct!");
-          markQuestionAsAnswered(selectedQuestion.category, selectedQuestion.points);
-      } else {
-          alert("Incorrect! The correct answer is: " + selectedQuestion.answer);
-      }
-      selectedQuestion = null; 
-      userInput = ""; 
-  }
+        if (userInput.trim().toLowerCase() === selectedQuestion.answer.toLowerCase()) { 
+            alert("Correct!");
+            updateScore(selectedPlayer, selectedQuestion.points); // Update score if correct
+        } else {
+            alert("Incorrect! The correct answer is: " + selectedQuestion.answer);
+            updateScore(selectedPlayer, -selectedQuestion.points); // Deduct points if incorrect
+        }
+        markQuestionAsAnswered(selectedQuestion.category, selectedQuestion.points);
+        selectedQuestion = null; 
+        userInput = ""; 
+    }
 
   function markQuestionAsAnswered(category, points) {
       const questionIndex = questions[category].findIndex(q => q.points === points && !q.answered);
@@ -61,12 +68,43 @@
           questions[category][questionIndex].answered = true;
       }
   }
+  // Update player score
+  function updateScore(playerIndex, points) {
+        players.update(plrs => {
+            plrs[playerIndex].score += points;
+            return plrs;
+        });
+    }
+
+  
 </script>
+
+<style>
+  .players {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+  }
+  .player {
+      text-align: center;
+  }
+</style>
 
 <Taskbar {items} />
 
 <h1 class="heading"> Jeopardy Main </h1>
 
+<!-- Display Players and Scores -->
+<div class="players">
+  {#each $players as player, i}
+      <div class="player">
+          <h3>{player.name}</h3>
+          <p>Score: {player.score}</p>
+      </div>
+  {/each}
+</div>
+
+<!-- Game Board -->
 <div class="prompts">
   <div class="container">
       <table>
@@ -171,3 +209,12 @@
       </table>
   </div>
 </div>
+
+{#if selectedQuestion}
+    <QuestionDisplay {selectedQuestion} />
+
+    <div>
+        <input bind:value={userInput} placeholder="Your answer" />
+        <button on:click={handleSubmit}>Submit Answer</button>
+    </div>
+{/if}

@@ -7899,19 +7899,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\batma\\.nuget\\packages\\": {}
+    "C:\\Users\\Steven\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\batma\\AppData\\Roaming\\npm\\JeopardyWebApp\\JeopardyAPI\\JeopardyAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Steven\\AppData\\Roaming\\npm\\JeopardyWebApp\\JeopardyAPI\\JeopardyAPI.csproj",
       "projectName": "JeopardyAPI",
-      "projectPath": "C:\\Users\\batma\\AppData\\Roaming\\npm\\JeopardyWebApp\\JeopardyAPI\\JeopardyAPI.csproj",
-      "packagesPath": "C:\\Users\\batma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\batma\\AppData\\Roaming\\npm\\JeopardyWebApp\\JeopardyAPI\\obj\\",
+      "projectPath": "C:\\Users\\Steven\\AppData\\Roaming\\npm\\JeopardyWebApp\\JeopardyAPI\\JeopardyAPI.csproj",
+      "packagesPath": "C:\\Users\\Steven\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Steven\\AppData\\Roaming\\npm\\JeopardyWebApp\\JeopardyAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\batma\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Steven\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

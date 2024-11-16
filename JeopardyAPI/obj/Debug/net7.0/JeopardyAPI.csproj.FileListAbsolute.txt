@@ -37,3 +37,42 @@ C:\Users\User\Desktop\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\refint\Jeopard
 C:\Users\User\Desktop\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\JeopardyAPI.pdb
 C:\Users\User\Desktop\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\JeopardyAPI.genruntimeconfig.cache
 C:\Users\User\Desktop\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\ref\JeopardyAPI.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\appsettings.json
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\JeopardyAPI.exe
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\JeopardyAPI.deps.json
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\JeopardyAPI.runtimeconfig.json
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\JeopardyAPI.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\JeopardyAPI.pdb
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\JeopardyAPI.csproj.AssemblyReference.cache
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\JeopardyAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\JeopardyAPI.AssemblyInfoInputs.cache
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\JeopardyAPI.AssemblyInfo.cs
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\JeopardyAPI.csproj.CoreCompileInputs.cache
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\JeopardyAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\JeopardyAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\JeopardyAPI.RazorAssemblyInfo.cache
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\JeopardyAPI.RazorAssemblyInfo.cs
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\JeopardyAPI.sourcelink.json
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\Jeopardy.D12282C9.Up2Date
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\JeopardyAPI.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\refint\JeopardyAPI.dll
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\JeopardyAPI.pdb
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\JeopardyAPI.genruntimeconfig.cache
+C:\Users\cpedr\OneDrive\Desktop\School\Software Construction\JeopardyWebApp\JeopardyAPI\obj\Debug\net7.0\ref\JeopardyAPI.dll

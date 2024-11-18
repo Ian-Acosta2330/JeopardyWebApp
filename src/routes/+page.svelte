@@ -1,110 +1,77 @@
-<title>JeopardyWebApp</title>
 <script>
-  import { players, addPlayer, removePlayer, updateScore, maxPlayers } from '../stores/players';
-  import { goto } from '$app/navigation';
-
-  let playerName = '';
-  let message = '';
-
-  const handleAddPlayer = () => {
-      if (playerName.length > 10) {
-          message = 'Name cannot exceed 10 characters.';
-          return;
+    import { onMount } from 'svelte';
+    import { goto } from '$app/navigation';
+  
+    // Handle keypress to navigate
+    function handleKeypress(event) {
+      if (event.key === 'Enter') {
+        goto('/player-select'); // Navigate to the player/gamemode select page
       }
-
-      addPlayer(playerName);
-      playerName = '';
-      message = '';
-  };
-
-
-
-  const startGame = () => {
-      if ($players.length > 0) {
-          goto('/game');
-      }
-  };
-
-  $: playersCount = $players.length;
-</script>
-
-<style>
-  .container {
+    }
+  
+    // Add a global keypress listener when the component mounts
+    onMount(() => {
+      window.addEventListener('keydown', handleKeypress);
+  
+      return () => {
+        window.removeEventListener('keydown', handleKeypress);
+      };
+    });
+  </script>
+  
+  <style>
+    /* Main container styles */
+    main {
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      height: 100vh;
-      text-align: center;
-  }
-
-  .player-form {
-      display: flex;
-      flex-direction: column;
       align-items: center;
-      margin-bottom: 20px;
-  }
-
-  .player-form input {
-      margin: 10px;
-      padding: 10px;
-      width: 200px;
-  }
-
-  .player-form button {
-      margin: 10px;
-      padding: 10px 20px;
-      cursor: pointer;
-  }
-
-  .player-list {
-      list-style-type: none;
-      padding: 0;
-      margin-bottom: 20px;
-  }
-
-  .player-item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 10px;
-  }
-
-  .player-item button {
-      margin-left: 10px;
-      cursor: pointer;
-  }
-</style>
-
-<div class="container">
-  <div class="player-form">
-      <h2>Add Players</h2>
-      <input
-          type="text"
-          bind:value={playerName}
-          placeholder="Enter player name"
-          maxlength="10"
-      />
-      <button on:click={handleAddPlayer} disabled={playersCount >= maxPlayers}>
-          Add Player
-      </button>
-      {#if message}
-          <p>{message}</p>
-      {/if}
-  </div>
-
-  <ul class="player-list">
-      {#each $players as { name, score }}
-          <li class="player-item">
-              {name} - Score: {score}
-              <button on:click={() => removePlayer(name)}>Remove</button>
-          </li>
-      {/each}
-  </ul>
-
-  <div class="player-form">
-      <button on:click={startGame} disabled={playersCount === 0}>
-          Start Game
-      </button>
-  </div>
-</div>
+      height: 100dvh;
+      width:100dvw;
+      background: radial-gradient(circle, #004080, #001f40); /* Matches global background */
+      font-family: 'Impact', sans-serif;
+      color: #f5f5f5;
+      overflow: hidden;
+    }
+  
+    /* Floating animated Jeopardy title */
+    h1 {
+      font-size: 7rem; /* Slightly larger */
+      color: #f5f5f5; /* Bright blue consistent with global.css */
+      text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Soft depth shadow */
+      animation: float 3s ease-in-out infinite;
+      margin-bottom: 1.5rem; /* Add space between title and text */
+    }
+  
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  
+    /* Press Enter text styles */
+    p {
+      font-size: 1.8rem; /* Slightly larger for readability */
+      color: rgba(255, 255, 255, 0.623); /* Softer white */
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+      animation: blink 1.5s infinite;
+    }
+  
+    @keyframes blink {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+  </style>
+  
+  <main>
+    <h1>JEOPARDY</h1>
+    <p>Press Enter to Start</p>
+  </main>
+  

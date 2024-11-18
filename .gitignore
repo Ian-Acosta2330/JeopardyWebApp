@@ -1,36 +1,83 @@
-# Ignore build output directories
+# =========================================
+# NODE.JS / SVELTEKIT IGNORE RULES
+# =========================================
+
+# Node.js dependencies
+node_modules/
+
+# SvelteKit build artifacts
+.svelte-kit/
+.output/
+build/
+dist/
+
+# Vite-specific files
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Lock files (optional: include only one of these based on your package manager)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE/Editor-specific files
+.vscode/
+.idea/
+*.iml
+
+# =========================================
+# .NET IGNORE RULES
+# =========================================
+
+# Build artifacts
 bin/
 obj/
-
-# Ignore appsettings files, except the templates
-appsettings*.json
-!appsettings.json
-!appsettings.Development.json
-
-# Ignore .NET runtime files
 *.exe
 *.dll
 *.pdb
 *.runtimeconfig.json
 *.deps.json
 
-# Ignore other auto-generated files
+# Logs
 *.log
-*.cache
-*.tmp
 
-# Ignore Swagger files if generated
-*.swagger*
+# Configuration files
+appsettings*.json
+!appsettings.json
+!appsettings.Development.json
 
-# Visual Studio and IDE-related files
-.vs/
+# Rider/JetBrains IDE
 .idea/
-
-# Rider/JetBrains files
 *.sln.iml
 
-# Environment files
-.env
-.env.*
-!.env.example
-!.env.test
+# Visual Studio-specific
+.vs/
+*.suo
+*.user
+*.cache
+
+# Entity Framework migrations (if generated dynamically)
+Migrations/
+
+# =========================================
+# CROSS-PLATFORM LINE ENDING NORMALIZATION
+# =========================================
+
+# Line ending normalization
+* text=auto

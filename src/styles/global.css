@@ -1,0 +1,125 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Body Background */
+body {
+    background: radial-gradient(circle, #004080, #001f40);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Heading Styles */
+.heading {
+    text-align: center;
+    font-size: 5rem;
+    color: #66ccff; /* Bright Blue */
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Adds depth */
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating Animation for Heading */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Main Content Wrapper */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 80%;
+    height: 60%; /* Ensure it fits within the viewport */
+    margin: auto;
+    border: 6px solid #004080; /* Dark Blue Border */
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead {
+    background-color: #003366; /* Deep Blue */
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+tbody {
+    background-color: #00509e; /* Bright Blue */
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    width: 33.33%;
+    height: 10vh;
+}
+
+/* Button Styles */
+button {
+    display: block;
+    background-color: #00509e; /* Bright Blue */
+    border: 2px solid #004080; /* Dark Blue Border */
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0074cc; /* Lighter Blue */
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Question Section (Specific) */
+.question-section button {
+    margin: 1rem auto;
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+    background-color: #004080;
+}
+
+.question-section input {
+    border: 2px solid #66ccff;
+    height: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    color: #003366;
+    background-color: #e6f7ff; /* Light Blue Background */
+}
+
+/* Add Consistent Spacing */
+.margin-top {
+    margin-top: 2rem;
+}

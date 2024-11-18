@@ -28,8 +28,6 @@ Thumbs.db
 
 # Lock files (optional: include only one of these based on your package manager)
 package-lock.json
-yarn.lock
-pnpm-lock.yaml
 
 # Environment files
 .env

@@ -1,21 +1,36 @@
-node_modules
+# Ignore build output directories
+bin/
+obj/
 
-# Output
-.output
-.vercel
-/.svelte-kit
-/build
+# Ignore appsettings files, except the templates
+appsettings*.json
+!appsettings.json
+!appsettings.Development.json
 
-# OS
-.DS_Store
-Thumbs.db
+# Ignore .NET runtime files
+*.exe
+*.dll
+*.pdb
+*.runtimeconfig.json
+*.deps.json
 
-# Env
+# Ignore other auto-generated files
+*.log
+*.cache
+*.tmp
+
+# Ignore Swagger files if generated
+*.swagger*
+
+# Visual Studio and IDE-related files
+.vs/
+.idea/
+
+# Rider/JetBrains files
+*.sln.iml
+
+# Environment files
 .env
 .env.*
 !.env.example
 !.env.test
-
-# Vite
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*

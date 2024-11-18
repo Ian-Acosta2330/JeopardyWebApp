@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
+    "net8.0": {
       "Microsoft.AspNetCore.Antiforgery/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -8443,36 +8443,36 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
+    "net8.0": [
       "Microsoft.AspNetCore.Mvc >= 2.2.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Cristian\\.nuget\\packages\\": {}
+    "C:\\Users\\cpedr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cristian\\Desktop\\School\\Software construction\\JeopardyWebApp\\JeopardyAPI\\JeopardyAPI.csproj",
+      "projectUniqueName": "C:\\Users\\cpedr\\OneDrive\\Desktop\\School\\Software Construction\\JeopardyWebApp\\JeopardyAPI\\JeopardyAPI.csproj",
       "projectName": "JeopardyAPI",
-      "projectPath": "C:\\Users\\Cristian\\Desktop\\School\\Software construction\\JeopardyWebApp\\JeopardyAPI\\JeopardyAPI.csproj",
-      "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cristian\\Desktop\\School\\Software construction\\JeopardyWebApp\\JeopardyAPI\\obj\\",
+      "projectPath": "C:\\Users\\cpedr\\OneDrive\\Desktop\\School\\Software Construction\\JeopardyWebApp\\JeopardyAPI\\JeopardyAPI.csproj",
+      "packagesPath": "C:\\Users\\cpedr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cpedr\\OneDrive\\Desktop\\School\\Software Construction\\JeopardyWebApp\\JeopardyAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\cpedr\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -8480,11 +8480,16 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.AspNetCore.Mvc": {
             "target": "Package",
@@ -8518,7 +8523,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

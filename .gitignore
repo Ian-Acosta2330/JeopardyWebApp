@@ -1,21 +1,50 @@
-node_modules
+# Node modules
+node_modules/
 
-# Output
-.output
-.vercel
-/.svelte-kit
-/build
+# SvelteKit build artifacts
+.svelte-kit/
+.output/
+.build/
 
-# OS
+# Vercel
+.vercel/
+
+# Operating System files
 .DS_Store
 Thumbs.db
 
-# Env
+# Environment files
 .env
 .env.*
 !.env.example
 !.env.test
 
-# Vite
+# Vite temporary files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# .NET auto-generated files and directories
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.pdb
+*.log
+*.vs/
+*.csproj.user
+*.dbmdl
+*.jfm
+
+# Entity Framework tools
+Migrations/
+
+# Rider project files
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/

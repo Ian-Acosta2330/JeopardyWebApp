@@ -69,6 +69,7 @@
   }
 
   // Handle question answer submission
+  let alertColor = '';
   function submitAnswer(event) {
     const answer = event.detail.trim().toLowerCase();
     const correctAnswer = selectedQuestion.correct_answer.trim().toLowerCase();
@@ -77,10 +78,12 @@
     const points = (selectedQuestion.questionIndex + 1) * 100 * multiplier;
 
     if (answer === correctAnswer) {
-      alert("Correct!");
+      showResult('Correct!', true);
+      // alert("Correct!");
       updateScore(player.name, points); // Award points
     } else {
-      alert(`Incorrect! The correct answer is: ${selectedQuestion.correct_answer}`);
+      showResult(`Incorrect! The correct answer is: ${selectedQuestion.correct_answer}`, false);
+      // alert(`Incorrect! The correct answer is: ${selectedQuestion.correct_answer}`);
       updateScore(player.name, -points); // Deduct points
     }
 
@@ -94,6 +97,17 @@
     selectedQuestion = null;
     currentPlayerIndex = (currentPlayerIndex + 1) % gamePlayers.length;
     showModal = false;
+  }
+
+  let alert = '';
+  let showAlert = false;
+  function showResult(message, correct) {
+    alert = message;
+    alertColor = correct ? 'green' : 'red';
+    showAlert = true;
+    setTimeout(() => {
+      showAlert = false;
+    }, 4000);
   }
 
   // Transition to the next phase
@@ -165,8 +179,43 @@
   {/if}
 </div>
 
+{#if showAlert}
+  <div class="alert-box" class:green={alertColor=='green'} class:red={alertColor=='red'}>
+    {alert}
+  </div>
+{/if}
 
 <style>
+  .alert-box {     
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: fixed;
+    margin: auto;
+    color: white;
+    font-size: 70px;
+    animation: fadeInOut 4s forwards;
+    font-weight: bold;
+  }
+  .alert-box.green{
+    color: green;
+  }
+  .alert-box.red {
+    color: red;
+  }
+  @keyframes fadeInOut {
+    0% { 
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
   .game-container {
     display: flex;
     flex-direction: column;

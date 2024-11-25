@@ -196,10 +196,18 @@
     font-weight: bold;
   }
   .alert-box.green{
-    color: green;
+    color: rgb(255, 255, 255);
+    background: radial-gradient(circle, #004080, #001f40);
+    border-radius: .5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    padding:1rem;
   }
   .alert-box.red {
-    color: red;
+    color: rgb(255, 255, 255);
+    background: radial-gradient(circle, #004080, #001f40);
+    border-radius: .5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    padding:1rem;
   }
   @keyframes fadeInOut {
     0% { 
@@ -321,11 +329,11 @@
 
   .modal {
     background: radial-gradient(circle, #004080, #001f40);
+    border-radius: .5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: center;
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     width: 90%;
     max-width: 500px;
     text-align: center;

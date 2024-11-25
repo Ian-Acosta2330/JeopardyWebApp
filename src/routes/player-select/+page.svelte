@@ -1,5 +1,5 @@
 <script>
-    import PlayerSelect from '../../components/PlayerSelect.svelte';
+    import PlayerSelect from '../../lib/components/PlayerSelect.svelte'
   </script>
   
   <PlayerSelect />

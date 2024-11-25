@@ -6,6 +6,15 @@
 	"/game": [
 		"src/routes/+layout.server.js"
 	],
+	"/game/double-jeopardy": [
+		"src/routes/+layout.server.js"
+	],
+	"/game/final-jeopardy": [
+		"src/routes/+layout.server.js"
+	],
+	"/game/jeopardy": [
+		"src/routes/+layout.server.js"
+	],
 	"/player-select": [
 		"src/routes/+layout.server.js"
 	]

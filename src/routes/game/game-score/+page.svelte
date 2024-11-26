@@ -12,6 +12,21 @@
     // Determine the winner(s)
     const winners = gamePlayers.filter(player => player.score === highestScore);
 
+    // save player scores to a json for scoreboard
+    async function saveScore(player, score) {
+    await fetch('http://localhost:5041/api/Score', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ player: player, value: score })
+        });
+    }
+
+    gamePlayers.forEach(player => {
+        if(player.score === highestScore){
+            saveScore(player.name, parseInt(player.score));
+        }
+    });
+
     function navigateToHome() {
         goto("/");
     }
@@ -30,6 +45,7 @@
                 {#if player.score === highestScore}
                     <p class="winner-badge">Winner!</p>
                 {/if}
+                
             </div>
         {/each}
     </div>
